@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sorry Letters</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Letters I Wrote For You 🤍</h1>
+    <p class="subtitle">
+      Each letter has a number and a passcode.
+      I’ll only give you the one you need.
+    </p>
+
+    <div id="lettersGrid" class="grid"></div>
+  </div>
+
+  <!-- PASSCODE MODAL -->
+  <div id="passcodeModal" class="modal">
+    <div class="modal-content">
+      <h2 id="modalTitle">Letter</h2>
+      <input
+        type="password"
+        id="passcodeInput"
+        placeholder="Enter 4-digit passcode"
+        maxlength="4"
+      />
+      <p id="errorMsg"></p>
+      <div class="modal-buttons">
+        <button onclick="closeModal()">Cancel</button>
+        <button onclick="submitPasscode()">Unlock</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
