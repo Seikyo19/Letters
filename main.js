@@ -90,9 +90,10 @@ const letters = {
   passcode: "0715",
   message: `Valentines today.. Sorry bebe dahil wala akong kakayahan na i spoil ka physically po. Believe me when I say this, last year pako nagpo plot kung pano kita mabigyan ng kahit ano pero hindi talaga kaya e. I'm literally crying while writing this haha. I've always dreamed of gifting you something but.. oh how disappointed I am at myself. I never thought na darating ako sa point na kinu question ko ung worth ko sayo kasi parang hindi talaga ako deserving. March 15, 2025 nung nagka aminan tayo. sobrang saya ko nun haha. March 18, 2025. The time you said you love me na haha. Fast haha. Puppy love, I know pero ngayon.. hindi na e. ang seryoso na ng nararamdaman natin and everytime I think about it, I just can't help but tear up. ayoko talagang mawala ka bebe but I don't know how to keep you forever.. Im trying my best but I feel like it isn't even enough, na para bang lagi akong kulang. patawarin moko bebe. I know how disappointing I am on this day. Happy Valentines po.`
   },
-  21: {
-  passcode: "8491"
-  message: `Heyy.. Okay, sorry napo—for bringing back the past. I wanted to justify my right and by that, I acted out of selfishness. I'm sorry po`
+  
+  20: {
+    passcode: "8491",
+    message: `Listen, Sorry bebe.. for bringing back the past. I know I shouldn't have. I've been selfish and didn't think about the consequences. I'm sorry`
   }
   
   // Add more up to 20 when needed
@@ -138,7 +139,6 @@ function submitPasscode() {
   if (entered === letter.passcode) {
     openLetter(letter.message);
   } else {
-    errorMsg.textContent = "Wrong pin or not meant to be opened";
   }
 }
 
