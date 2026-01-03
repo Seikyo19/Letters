@@ -99,7 +99,7 @@ const letters = {
 };
 
 /* ===== CREATE LETTER BUTTONS ===== */
-for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= 21; i++) {
   const btn = document.createElement("button");
   btn.className = "letter-btn";
   btn.textContent = `🔒 Letter #${i}`;
